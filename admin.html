@@ -1,1 +1,2617 @@
+<!DOCTYPE html>
+<html lang="hi">
 
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admin Panel | Prakash M.9</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+<h1>Prakash M.9</h1>
+
+<p>Super Admin Dashboard</p>
+
+</div>
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="merchant.html">Merchant</a></li>
+
+<li><a href="distributor.html">Distributor</a></li>
+
+<li><a href="login.html">Login</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="container">
+
+<h2>Welcome Admin</h2>
+
+<p>
+
+Manage Complete Prakash M.9 Digital Platform
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<form id="adminLogin">
+
+<label>
+
+Admin ID
+
+</label>
+
+<input
+type="text"
+id="adminId"
+placeholder="Enter Admin ID"
+required>
+
+<label>
+
+Password
+
+</label>
+
+<input
+type="password"
+id="adminPassword"
+placeholder="Enter Password"
+required>
+
+<button
+type="submit"
+class="btn">
+
+Admin Login
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2>Dashboard</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Total Merchants</h3>
+
+<h2 id="merchantCount">
+
+0
+
+</h2>
+
+</div>
+
+<div class="card">
+
+<h3>Total Distributors</h3>
+
+<h2 id="distributorCount">
+
+0
+
+</h2>
+
+</div>
+
+<div class="card">
+
+<h3>Total Users</h3>
+
+<h2 id="userCount">
+
+0
+
+</h2>
+
+</div>
+
+<div class="card">
+
+<h3>Website Status</h3>
+
+<p style="color:green;">
+
+🟢 Online
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section><!-- ===========================
+Admin Part 2
+(Paste BELOW Part 1
+and BEFORE </body>)
+=========================== -->
+
+<section id="admin-merchants">
+
+<div class="container">
+
+<h2>Merchant Management</h2>
+
+<table class="table">
+
+<tr>
+
+<th>ID</th>
+
+<th>Name</th>
+
+<th>Mobile</th>
+
+<th>Status</th>
+
+<th>Action</th>
+
+</tr>
+
+<tr>
+
+<td>PM9-M0001</td>
+
+<td>Merchant Name</td>
+
+<td>7004533943</td>
+
+<td>Pending</td>
+
+<td>
+
+<button class="btn">
+
+Approve
+
+</button>
+
+<button class="btn">
+
+Reject
+
+</button>
+
+</td>
+
+</tr>
+
+</table>
+
+</div>
+
+</section>
+
+<section id="admin-distributors">
+
+<div class="container">
+
+<h2>Distributor Management</h2>
+
+<table class="table">
+
+<tr>
+
+<th>ID</th>
+
+<th>Name</th>
+
+<th>Mobile</th>
+
+<th>Status</th>
+
+<th>Action</th>
+
+</tr>
+
+<tr>
+
+<td>PM9-D0001</td>
+
+<td>Distributor Name</td>
+
+<td>7004533943</td>
+
+<td>Pending</td>
+
+<td>
+
+<button class="btn">
+
+Approve
+
+</button>
+
+<button class="btn">
+
+Reject
+
+</button>
+
+</td>
+
+</tr>
+
+</table>
+
+</div>
+
+</section>
+
+<section id="admin-menu">
+
+<div class="container">
+
+<h2>Quick Menu</h2>
+
+<div class="hero-btn">
+
+<a href="merchant.html" class="btn">
+
+Merchant
+
+</a>
+
+<a href="distributor.html" class="btn">
+
+Distributor
+
+</a>
+
+<a href="login.html" class="btn">
+
+Login
+
+</a>
+
+<a href="index.html" class="btn">
+
+Home
+
+</a>
+
+</div>
+
+</div>
+
+</section><!-- ===========================
+Admin Part 3
+(Paste BELOW Part 2
+and BEFORE </body>)
+=========================== -->
+
+<section id="admin-services">
+
+<div class="container">
+
+<h2>Service Management</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Website Service</h3>
+
+<p>Active</p>
+
+<button class="btn">
+
+Manage
+
+</button>
+
+</div>
+
+<div class="card">
+
+<h3>AI Service</h3>
+
+<p>Active</p>
+
+<button class="btn">
+
+Manage
+
+</button>
+
+</div>
+
+<div class="card">
+
+<h3>YouTube Service</h3>
+
+<p>Active</p>
+
+<button class="btn">
+
+Manage
+
+</button>
+
+</div>
+
+<div class="card">
+
+<h3>Digital Marketing</h3>
+
+<p>Active</p>
+
+<button class="btn">
+
+Manage
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="admin-payments">
+
+<div class="container">
+
+<h2>Payment History</h2>
+
+<table class="table">
+
+<tr>
+
+<th>User ID</th>
+
+<th>Name</th>
+
+<th>Amount</th>
+
+<th>Status</th>
+
+</tr>
+
+<tr>
+
+<td>PM9-0001</td>
+
+<td>Merchant Name</td>
+
+<td>₹199</td>
+
+<td>Success</td>
+
+</tr>
+
+<tr>
+
+<td>PM9-0002</td>
+
+<td>Distributor Name</td>
+
+<td>₹199</td>
+
+<td>Pending</td>
+
+</tr>
+
+</table>
+
+</div>
+
+</section>
+
+<section id="admin-settings">
+
+<div class="container">
+
+<h2>Website Settings</h2>
+
+<div class="hero-btn">
+
+<button class="btn">
+
+Enable Registration
+
+</button>
+
+<button class="btn">
+
+Disable Registration
+
+</button>
+
+<button class="btn">
+
+Backup Database
+
+</button>
+
+<button class="btn">
+
+Logout Admin
+
+</button>
+
+</div>
+
+</div>
+
+</section><!-- ===========================
+Admin Part 4
+(Paste BELOW Part 3
+and BEFORE </body>)
+=========================== -->
+
+<section id="admin-wallet">
+
+<div class="container">
+
+<h2>Wallet Management</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Total Collection</h3>
+
+<h2>₹0.00</h2>
+
+</div>
+
+<div class="card">
+
+<h3>Total Withdrawal</h3>
+
+<h2>₹0.00</h2>
+
+</div>
+
+<div class="card">
+
+<h3>Pending Payment</h3>
+
+<h2>₹0.00</h2>
+
+</div>
+
+<div class="card">
+
+<h3>Available Balance</h3>
+
+<h2>₹0.00</h2>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="admin-notification">
+
+<div class="container">
+
+<h2>Send Notification</h2>
+
+<form id="notificationForm">
+
+<input
+type="text"
+placeholder="Notification Title"
+required>
+
+<textarea
+rows="5"
+placeholder="Write Notification"
+required>
+
+</textarea>
+
+<button
+type="submit"
+class="btn">
+
+Send Notification
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<section id="admin-reports">
+
+<div class="container">
+
+<h2>Reports</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Today's Registration</h3>
+
+<h2>0</h2>
+
+</div>
+
+<div class="card">
+
+<h3>Today's Income</h3>
+
+<h2>₹0.00</h2>
+
+</div>
+
+<div class="card">
+
+<h3>Pending Requests</h3>
+
+<h2>0</h2>
+
+</div>
+
+<div class="card">
+
+<h3>Approved Users</h3>
+
+<h2>0</h2>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="admin-support">
+
+<div class="container">
+
+<h2>Admin Support</h2>
+
+<div class="hero-btn">
+
+<a
+href="index.html"
+class="btn">
+
+🏠 Home
+
+</a>
+
+<a
+href="merchant.html"
+class="btn">
+
+🏪 Merchant
+
+</a>
+
+<a
+href="distributor.html"
+class="btn">
+
+👥 Distributor
+
+</a>
+
+<a
+href="login.html"
+class="btn">
+
+🔐 Login
+
+</a>
+
+</div>
+
+</div>
+
+</section><!-- ===========================
+Admin Part 5
+(Paste BELOW Part 4
+and BEFORE </body>)
+=========================== -->
+
+<section id="admin-users">
+
+<div class="container">
+
+<h2>All Registered Users</h2>
+
+<table class="table">
+
+<tr>
+
+<th>User ID</th>
+
+<th>Name</th>
+
+<th>Role</th>
+
+<th>Status</th>
+
+<th>Action</th>
+
+</tr>
+
+<tr>
+
+<td>PM9-0001</td>
+
+<td>User Name</td>
+
+<td>Merchant</td>
+
+<td>Active</td>
+
+<td>
+
+<button class="btn">
+
+View
+
+</button>
+
+<button class="btn">
+
+Delete
+
+</button>
+
+</td>
+
+</tr>
+
+</table>
+
+</div>
+
+</section>
+
+<section id="admin-announcement">
+
+<div class="container">
+
+<h2>Announcement</h2>
+
+<form id="announcementForm">
+
+<input
+type="text"
+placeholder="Announcement Title"
+required>
+
+<textarea
+rows="5"
+placeholder="Write Announcement"
+required>
+
+</textarea>
+
+<button
+type="submit"
+class="btn">
+
+Publish
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<section id="admin-system">
+
+<div class="container">
+
+<h2>System Information</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Website Version</h3>
+
+<p>3.0</p>
+
+</div>
+
+<div class="card">
+
+<h3>Database</h3>
+
+<p>Firebase Connected</p>
+
+</div>
+
+<div class="card">
+
+<h3>Server Status</h3>
+
+<p style="color:green;">
+
+🟢 Online
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Security</h3>
+
+<p>
+
+SSL Protected
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="admin-footer">
+
+<div class="container">
+
+<h3>
+
+Prakash M.9 Admin Panel
+
+</h3>
+
+<p>
+
+Version 1.0
+
+</p>
+
+<p>
+
+Powered By Prakash M.9 Digital Platform
+
+</p>
+
+<p>
+
+© 2026 All Rights Reserved.
+
+</p>
+
+</div>
+
+</section><!-- ===========================
+Admin Part 6
+(Paste BELOW Part 5
+and BEFORE </body>)
+=========================== -->
+
+<section id="admin-merchant-requests">
+
+<div class="container">
+
+<h2>Merchant Approval Requests</h2>
+
+<table class="table">
+
+<tr>
+
+<th>ID</th>
+
+<th>Name</th>
+
+<th>Mobile</th>
+
+<th>Status</th>
+
+<th>Action</th>
+
+</tr>
+
+<tr>
+
+<td>PM9-M0002</td>
+
+<td>Merchant Name</td>
+
+<td>7004533943</td>
+
+<td>Pending</td>
+
+<td>
+
+<button class="btn">
+
+Approve
+
+</button>
+
+<button class="btn">
+
+Reject
+
+</button>
+
+</td>
+
+</tr>
+
+</table>
+
+</div>
+
+</section>
+
+<section id="admin-distributor-requests">
+
+<div class="container">
+
+<h2>Distributor Approval Requests</h2>
+
+<table class="table">
+
+<tr>
+
+<th>ID</th>
+
+<th>Name</th>
+
+<th>Mobile</th>
+
+<th>Status</th>
+
+<th>Action</th>
+
+</tr>
+
+<tr>
+
+<td>PM9-D0002</td>
+
+<td>Distributor Name</td>
+
+<td>7004533943</td>
+
+<td>Pending</td>
+
+<td>
+
+<button class="btn">
+
+Approve</button>
+
+<button class="btn">
+
+Reject</button>
+
+</td>
+
+</tr>
+
+</table>
+
+</div>
+
+</section>
+
+<section id="admin-income">
+
+<div class="container">
+
+<h2>Income Summary</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Today's Income</h3>
+
+<h2>₹0.00</h2>
+
+</div>
+
+<div class="card">
+
+<h3>This Month</h3>
+
+<h2>₹0.00</h2>
+
+</div>
+
+<div class="card">
+
+<h3>Total Income</h3>
+
+<h2>₹0.00</h2>
+
+</div>
+
+<div class="card">
+
+<h3>Total Withdraw</h3>
+
+<h2>₹0.00</h2>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="admin-navigation">
+
+<div class="container">
+
+<h2>Quick Navigation</h2>
+
+<div class="hero-btn">
+
+<a href="index.html" class="btn">
+
+🏠 Home
+
+</a>
+
+<a href="merchant.html" class="btn">
+
+🏪 Merchant
+
+</a>
+
+<a href="distributor.html" class="btn">
+
+👥 Distributor
+
+</a>
+
+<a href="login.html" class="btn">
+
+🔐 Login
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== END Admin Part 6 ===== --><!-- ===========================
+Admin Part 7
+(Paste BELOW Part 6
+and BEFORE </body>)
+=========================== -->
+
+<section id="admin-kyc">
+
+<div class="container">
+
+<h2>KYC Verification</h2>
+
+<table class="table">
+
+<tr>
+
+<th>User ID</th>
+
+<th>Name</th>
+
+<th>KYC Status</th>
+
+<th>Action</th>
+
+</tr>
+
+<tr>
+
+<td>PM9-0003</td>
+
+<td>User Name</td>
+
+<td>Pending</td>
+
+<td>
+
+<button class="btn">
+
+Approve
+
+</button>
+
+<button class="btn">
+
+Reject
+
+</button>
+
+</td>
+
+</tr>
+
+</table>
+
+</div>
+
+</section>
+
+<section id="admin-banner">
+
+<div class="container">
+
+<h2>Banner Management</h2>
+
+<form id="bannerForm">
+
+<label>Banner Title</label>
+
+<input
+type="text"
+placeholder="Enter Banner Title">
+
+<label>Banner Image</label>
+
+<input
+type="file"
+accept="image/*">
+
+<button
+type="submit"
+class="btn">
+
+Upload Banner
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<section id="admin-news">
+
+<div class="container">
+
+<h2>Latest News</h2>
+
+<textarea
+rows="5"
+placeholder="Write Latest News">
+
+</textarea>
+
+<br><br>
+
+<button
+class="btn">
+
+Publish News
+
+</button>
+
+</div>
+
+</section>
+
+<section id="admin-backup">
+
+<div class="container">
+
+<h2>Database Backup</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Firebase Backup</h3>
+
+<button class="btn">
+
+Create Backup
+
+</button>
+
+</div>
+
+<div class="card">
+
+<h3>Restore Backup</h3>
+
+<button class="btn">
+
+Restore
+
+</button>
+
+</div>
+
+<div class="card">
+
+<h3>Export Data</h3>
+
+<button class="btn">
+
+Export CSV
+
+</button>
+
+</div>
+
+<div class="card">
+
+<h3>Delete Backup</h3>
+
+<button class="btn">
+
+Delete
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== END Admin Part 7 ===== --><!-- ===========================
+Admin Part 8
+(Paste BELOW Part 7
+and BEFORE </body>)
+=========================== -->
+
+<section id="admin-wallet-management">
+
+<div class="container">
+
+<h2>Wallet Management</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Total Wallet Balance</h3>
+
+<h2>₹0.00</h2>
+
+</div>
+
+<div class="card">
+
+<h3>Pending Withdraw</h3>
+
+<h2>₹0.00</h2>
+
+</div>
+
+<div class="card">
+
+<h3>Approved Withdraw</h3>
+
+<h2>₹0.00</h2>
+
+</div>
+
+<div class="card">
+
+<h3>Rejected Withdraw</h3>
+
+<h2>₹0.00</h2>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="admin-user-search">
+
+<div class="container">
+
+<h2>Search User</h2>
+
+<form id="searchUserForm">
+
+<input
+type="text"
+placeholder="Search By Name / Mobile / ID">
+
+<button
+type="submit"
+class="btn">
+
+Search
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<section id="admin-app-control">
+
+<div class="container">
+
+<h2>Application Control</h2>
+
+<div class="hero-btn">
+
+<button class="btn">
+
+Enable Website
+
+</button>
+
+<button class="btn">
+
+Disable Website
+
+</button>
+
+<button class="btn">
+
+Enable Registration
+
+</button>
+
+<button class="btn">
+
+Disable Registration
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="admin-activity">
+
+<div class="container">
+
+<h2>Recent Activity</h2>
+
+<table class="table">
+
+<tr>
+
+<th>Date</th>
+
+<th>User</th>
+
+<th>Activity</th>
+
+</tr>
+
+<tr>
+
+<td>--/--/----</td>
+
+<td>Admin</td>
+
+<td>Logged In</td>
+
+</tr>
+
+<tr>
+
+<td>--/--/----</td>
+
+<td>Merchant</td>
+
+<td>Registration Submitted</td>
+
+</tr>
+
+</table>
+
+</div>
+
+</section>
+
+<!-- ===== END Admin Part 8 ===== --><!-- ===========================
+Admin Part 9
+(Paste BELOW Part 8
+and BEFORE </body>)
+=========================== -->
+
+<section id="admin-profile">
+
+<div class="container">
+
+<h2>Admin Profile</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Admin Name</h3>
+
+<p>
+
+Super Admin
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Admin ID</h3>
+
+<p>
+
+ADMIN001
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Email</h3>
+
+<p>
+
+admin@prakashm9.com
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Status</h3>
+
+<p style="color:green;">
+
+🟢 Active
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="admin-payment-history">
+
+<div class="container">
+
+<h2>Recent Payments</h2>
+
+<table class="table">
+
+<tr>
+
+<th>Date</th>
+
+<th>User</th>
+
+<th>Amount</th>
+
+<th>Status</th>
+
+</tr>
+
+<tr>
+
+<td>--/--/----</td>
+
+<td>Merchant</td>
+
+<td>₹199</td>
+
+<td>Success</td>
+
+</tr>
+
+<tr>
+
+<td>--/--/----</td>
+
+<td>Distributor</td>
+
+<td>₹199</td>
+
+<td>Pending</td>
+
+</tr>
+
+</table>
+
+</div>
+
+</section>
+
+<section id="admin-support">
+
+<div class="container">
+
+<h2>Support Center</h2>
+
+<div class="hero-btn">
+
+<a href="tel:7004533943" class="btn">
+
+📞 Call
+
+</a>
+
+<a href="https://chat.whatsapp.com/Lnvm7suOpduAd3I6yFeeAE"
+target="_blank"
+class="btn">
+
+💬 WhatsApp
+
+</a>
+
+<a href="index.html"
+class="btn">
+
+🏠 Home
+
+</a>
+
+<a href="login.html"
+class="btn">
+
+🔐 Logout
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="admin-footer">
+
+<div class="container">
+
+<h3>Prakash M.9 Admin Panel</h3>
+
+<p>Version 2.0</p>
+
+<p>Powered By Prakash M.9 Digital Platform</p>
+
+<p>© 2026 All Rights Reserved.</p>
+
+</div>
+
+</section>
+
+<!-- ===== END Admin Part 9 ===== --><!-- ===========================
+Admin Part 10
+(Paste BELOW Part 9
+and BEFORE </body>)
+=========================== -->
+
+<section id="admin-website-settings">
+
+<div class="container">
+
+<h2>Website Settings</h2>
+
+<form id="websiteSettings">
+
+<label>Website Name</label>
+
+<input
+type="text"
+value="Prakash M.9">
+
+<label>Support Mobile</label>
+
+<input
+type="text"
+value="7004533943">
+
+<label>Support Email</label>
+
+<input
+type="email"
+placeholder="support@example.com">
+
+<label>Website Notice</label>
+
+<textarea
+rows="4"
+placeholder="Enter Website Notice">
+
+</textarea>
+
+<button
+type="submit"
+class="btn">
+
+Save Settings
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<section id="admin-user-control">
+
+<div class="container">
+
+<h2>User Control</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Active Users</h3>
+
+<h2>0</h2>
+
+</div>
+
+<div class="card">
+
+<h3>Blocked Users</h3>
+
+<h2>0</h2>
+
+</div>
+
+<div class="card">
+
+<h3>Pending Approval</h3>
+
+<h2>0</h2>
+
+</div>
+
+<div class="card">
+
+<h3>Total Visitors</h3>
+
+<h2>0</h2>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="admin-quick-actions">
+
+<div class="container">
+
+<h2>Quick Actions</h2>
+
+<div class="hero-btn">
+
+<button class="btn">
+
+Approve All
+
+</button>
+
+<button class="btn">
+
+Reject All
+
+</button>
+
+<button class="btn">
+
+Refresh Data
+
+</button>
+
+<button class="btn">
+
+Logout Admin
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="admin-system-info">
+
+<div class="container">
+
+<h2>System Information</h2>
+
+<table class="table">
+
+<tr>
+
+<th>Module</th>
+
+<th>Status</th>
+
+</tr>
+
+<tr>
+
+<td>Firebase</td>
+
+<td>🟢 Connected</td>
+
+</tr>
+
+<tr>
+
+<td>Authentication</td>
+
+<td>🟢 Running</td>
+
+</tr>
+
+<tr>
+
+<td>Merchant Panel</td>
+
+<td>🟢 Active</td>
+
+</tr>
+
+<tr>
+
+<td>Distributor Panel</td>
+
+<td>🟢 Active</td>
+
+</tr>
+
+<tr>
+
+<td>Admin Panel</td>
+
+<td>🟢 Active</td>
+
+</tr>
+
+</table>
+
+</div>
+
+</section>
+
+<!-- ===== END Admin Part 10 ===== --><!-- ===========================
+Admin Part 11
+(Paste BELOW Part 10
+and BEFORE </body>)
+=========================== -->
+
+<section id="admin-withdraw-request">
+
+<div class="container">
+
+<h2>Withdraw Requests</h2>
+
+<table class="table">
+
+<tr>
+
+<th>User ID</th>
+
+<th>Name</th>
+
+<th>Amount</th>
+
+<th>Status</th>
+
+<th>Action</th>
+
+</tr>
+
+<tr>
+
+<td>PM9-0001</td>
+
+<td>User Name</td>
+
+<td>₹500</td>
+
+<td>Pending</td>
+
+<td>
+
+<button class="btn">
+
+Approve
+
+</button>
+
+<button class="btn">
+
+Reject
+
+</button>
+
+</td>
+
+</tr>
+
+</table>
+
+</div>
+
+</section>
+
+<section id="admin-contact-management">
+
+<div class="container">
+
+<h2>Contact Information</h2>
+
+<form id="contactForm">
+
+<label>Support Mobile</label>
+
+<input
+type="text"
+value="7004533943">
+
+<label>WhatsApp Link</label>
+
+<input
+type="text"
+placeholder="WhatsApp Group Link">
+
+<label>YouTube Channel</label>
+
+<input
+type="text"
+placeholder="YouTube Channel Link">
+
+<button
+type="submit"
+class="btn">
+
+Update Contact
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<section id="admin-notice-board">
+
+<div class="container">
+
+<h2>Notice Board</h2>
+
+<textarea
+rows="6"
+placeholder="Write Important Notice">
+
+</textarea>
+
+<br><br>
+
+<button class="btn">
+
+Publish Notice
+
+</button>
+
+</div>
+
+</section>
+
+<section id="admin-shortcuts">
+
+<div class="container">
+
+<h2>Quick Shortcuts</h2>
+
+<div class="hero-btn">
+
+<a href="index.html" class="btn">
+
+🏠 Home
+
+</a>
+
+<a href="merchant.html" class="btn">
+
+🏪 Merchant
+
+</a>
+
+<a href="distributor.html" class="btn">
+
+👥 Distributor
+
+</a>
+
+<a href="login.html" class="btn">
+
+🔐 Login
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== END Admin Part 11 ===== --><!-- ===========================
+Admin Part 12
+(Paste BELOW Part 11
+and BEFORE </body>)
+=========================== -->
+
+<section id="admin-profile-settings">
+
+<div class="container">
+
+<h2>Admin Profile Settings</h2>
+
+<form id="adminProfileForm">
+
+<label>Admin Name</label>
+
+<input
+type="text"
+placeholder="Enter Admin Name">
+
+<label>Mobile Number</label>
+
+<input
+type="tel"
+placeholder="Enter Mobile Number">
+
+<label>Email Address</label>
+
+<input
+type="email"
+placeholder="Enter Email Address">
+
+<label>Change Password</label>
+
+<input
+type="password"
+placeholder="New Password">
+
+<button
+type="submit"
+class="btn">
+
+Update Profile
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<section id="admin-statistics">
+
+<div class="container">
+
+<h2>Website Statistics</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Total Visitors</h3>
+
+<h2>0</h2>
+
+</div>
+
+<div class="card">
+
+<h3>Today's Visitors</h3>
+
+<h2>0</h2>
+
+</div>
+
+<div class="card">
+
+<h3>Total Revenue</h3>
+
+<h2>₹0.00</h2>
+
+</div>
+
+<div class="card">
+
+<h3>Active Members</h3>
+
+<h2>0</h2>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="admin-logs">
+
+<div class="container">
+
+<h2>Admin Activity Logs</h2>
+
+<table class="table">
+
+<tr>
+
+<th>Date</th>
+
+<th>Admin</th>
+
+<th>Activity</th>
+
+</tr>
+
+<tr>
+
+<td>--/--/----</td>
+
+<td>Super Admin</td>
+
+<td>Logged In</td>
+
+</tr>
+
+<tr>
+
+<td>--/--/----</td>
+
+<td>Super Admin</td>
+
+<td>Approved Merchant</td>
+
+</tr>
+
+</table>
+
+</div>
+
+</section>
+
+<section id="admin-footer-info">
+
+<div class="container">
+
+<h3>
+
+Prakash M.9 Admin Dashboard
+
+</h3>
+
+<p>
+
+Version 2.2
+
+</p>
+
+<p>
+
+Powered By Prakash M.9 Digital Platform
+
+</p>
+
+<p>
+
+© 2026 All Rights Reserved.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ===== END Admin Part 12 ===== --><!-- ===========================
+Admin Part 13
+(Paste BELOW Part 12
+and BEFORE </body>)
+=========================== -->
+
+<section id="admin-payment-settings">
+
+<div class="container">
+
+<h2>Payment Gateway Settings</h2>
+
+<form id="paymentGatewayForm">
+
+<label>UPI ID</label>
+
+<input
+type="text"
+placeholder="Enter UPI ID">
+
+<label>Merchant Name</label>
+
+<input
+type="text"
+placeholder="Enter Merchant Name">
+
+<label>Payment Status</label>
+
+<select>
+
+<option>Enable</option>
+
+<option>Disable</option>
+
+</select>
+
+<button
+type="submit"
+class="btn">
+
+Save Settings
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<section id="admin-user-feedback">
+
+<div class="container">
+
+<h2>User Feedback</h2>
+
+<table class="table">
+
+<tr>
+
+<th>User</th>
+
+<th>Message</th>
+
+<th>Status</th>
+
+</tr>
+
+<tr>
+
+<td>User Name</td>
+
+<td>Feedback Message</td>
+
+<td>Pending</td>
+
+</tr>
+
+</table>
+
+</div>
+
+</section>
+
+<section id="admin-backup-manager">
+
+<div class="container">
+
+<h2>Backup Manager</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Create Backup</h3>
+
+<button class="btn">
+
+Backup Now
+
+</button>
+
+</div>
+
+<div class="card">
+
+<h3>Restore Backup</h3>
+
+<button class="btn">
+
+Restore
+
+</button>
+
+</div>
+
+<div class="card">
+
+<h3>Export Users</h3>
+
+<button class="btn">
+
+Export CSV
+
+</button>
+
+</div>
+
+<div class="card">
+
+<h3>Import Data</h3>
+
+<button class="btn">
+
+Import
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="admin-security">
+
+<div class="container">
+
+<h2>Security Center</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Firewall</h3>
+
+<p>🟢 Active</p>
+
+</div>
+
+<div class="card">
+
+<h3>SSL Certificate</h3>
+
+<p>🟢 Installed</p>
+
+</div>
+
+<div class="card">
+
+<h3>Firebase Security</h3>
+
+<p>🟢 Protected</p>
+
+</div>
+
+<div class="card">
+
+<h3>Admin Access</h3>
+
+<p>Restricted</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== END Admin Part 13 ===== --><!-- ===========================
+Admin Part 14
+(Paste BELOW Part 13
+and BEFORE </body>)
+=========================== -->
+
+<section id="admin-api-settings">
+
+<div class="container">
+
+<h2>API & Firebase Settings</h2>
+
+<form id="firebaseSettings">
+
+<label>Firebase Project ID</label>
+
+<input
+type="text"
+placeholder="Project ID">
+
+<label>API Key</label>
+
+<input
+type="text"
+placeholder="Firebase API Key">
+
+<label>Auth Domain</label>
+
+<input
+type="text"
+placeholder="Project.firebaseapp.com">
+
+<label>Storage Bucket</label>
+
+<input
+type="text"
+placeholder="Storage Bucket">
+
+<button
+type="submit"
+class="btn">
+
+Save Settings
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<section id="admin-member-plan">
+
+<div class="container">
+
+<h2>Membership Plans</h2>
+
+<table class="table">
+
+<tr>
+
+<th>Plan</th>
+
+<th>Amount</th>
+
+<th>Status</th>
+
+</tr>
+
+<tr>
+
+<td>Merchant</td>
+
+<td>₹199</td>
+
+<td>Active</td>
+
+</tr>
+
+<tr>
+
+<td>Distributor</td>
+
+<td>₹199</td>
+
+<td>Active</td>
+
+</tr>
+
+</table>
+
+</div>
+
+</section>
+
+<section id="admin-system-monitor">
+
+<div class="container">
+
+<h2>System Monitor</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>CPU Status</h3>
+
+<p>🟢 Normal</p>
+
+</div>
+
+<div class="card">
+
+<h3>Database</h3>
+
+<p>🟢 Connected</p>
+
+</div>
+
+<div class="card">
+
+<h3>Storage</h3>
+
+<p>Available</p>
+
+</div>
+
+<div class="card">
+
+<h3>Website</h3>
+
+<p>🟢 Running</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="admin-footer-links">
+
+<div class="container">
+
+<h2>Quick Links</h2>
+
+<div class="hero-btn">
+
+<a href="index.html" class="btn">
+
+🏠 Home
+
+</a>
+
+<a href="merchant.html" class="btn">
+
+🏪 Merchant
+
+</a>
+
+<a href="distributor.html" class="btn">
+
+👥 Distributor
+
+</a>
+
+<a href="login.html" class="btn">
+
+🔐 Logout
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== END Admin Part 14 ===== --><!-- ===========================
+Admin Part 15
+(Paste BELOW Part 14
+and BEFORE </body>)
+=========================== -->
+
+<section id="admin-final-dashboard">
+
+<div class="container">
+
+<h2>Prakash M.9 Super Admin Dashboard</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Total Merchants</h3>
+
+<h2 id="totalMerchants">0</h2>
+
+</div>
+
+<div class="card">
+
+<h3>Total Distributors</h3>
+
+<h2 id="totalDistributors">0</h2>
+
+</div>
+
+<div class="card">
+
+<h3>Total Revenue</h3>
+
+<h2>₹0.00</h2>
+
+</div>
+
+<div class="card">
+
+<h3>System Status</h3>
+
+<p style="color:green;">
+
+🟢 Online
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="admin-contact">
+
+<div class="container">
+
+<h2>Official Contact</h2>
+
+<p>
+
+📞 Mobile : 7004533943
+
+</p>
+
+<p>
+
+💳 UPI : 7004533943-2@ybl
+
+</p>
+
+<p>
+
+💬 WhatsApp Group Available
+
+</p>
+
+<p>
+
+▶ YouTube : PkAartideviVlogs
+
+</p>
+
+<div class="hero-btn">
+
+<a
+href="tel:7004533943"
+class="btn">
+
+📞 Call
+
+</a>
+
+<a
+href="https://chat.whatsapp.com/Lnvm7suOpduAd3I6yFeeAE"
+target="_blank"
+class="btn">
+
+💬 WhatsApp
+
+</a>
+
+<a
+href="https://www.youtube.com/@PkAartideviVlogs"
+target="_blank"
+class="btn">
+
+▶ YouTube
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<div class="container">
+
+<h2>Prakash M.9 Admin Panel</h2>
+
+<p>
+
+Version 3.0
+
+</p>
+
+<p>
+
+Powered By <strong>Prakash M.9 Digital Platform</strong>
+
+</p>
+
+<p>
+
+© 2026 Prakash M.9
+
+All Rights Reserved.
+
+</p>
+
+</div>
+
+</footer>
+
+<script src="firebase.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
