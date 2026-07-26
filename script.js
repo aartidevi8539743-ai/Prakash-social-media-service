@@ -1,4 +1,17 @@
-/* ===================================
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-app.js";
+import { getAuth } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-auth.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDBNLzcSZW5hJJC5NPRqEDSkfEJDc-UXz0",
+  authDomain: "prakashm9-9abe4.firebaseapp.com",
+  projectId: "prakashm9-9abe4",
+  storageBucket: "prakashm9-9abe4.firebasestorage.app",
+  messagingSenderId: "401338037724",
+  appId: "1:401338037724:web:5550b5d4c3e23d31964b19"
+};
+
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);/* ===================================
 Prakash M.9
 script.js
 Part 1
